@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Memento - Oynat</title>
+    <link rel="stylesheet" href="./movie-player.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="video-player">
+            <video id="movie-video" width="100%" height="auto" poster="./assets/images/memento.jpg" controls>
+                <source src="./assets/videos/memento.mp4" type="video/mp4">
+                Tarayıcınız video oynatmayı desteklemiyor.
+            </video>
+            <div class="controls">
+                <a href="#" class="play-btn" id="play-btn"><span class="material-icons">play_arrow</span></a>
+                <select class="quality-select">
+                    <option value="1080p">1080p</option>
+                    <option value="720p">720p</option>
+                    <option value="480p">480p</option>
+                </select>
+            </div>
+        </div>
+        <div class="movie-details">
+            <h1>Memento</h1>
+            <div class="rating">
+                <span class="material-icons star">star</span>
+                <span>8.4/10</span>
+            </div>
+            <p class="description">
+                Leonard Shelby, hafıza kaybı yaşayan bir adamdır ve karısının katilini bulmaya çalışır. 
+                Ancak her 15 dakikada bir hafızası sıfırlanır. Bu sürükleyici gerilim filmi, 
+                tersine akan bir hikaye ile izleyiciyi büyüler.
+            </p>
+            <div class="comments">
+                <h3>Yorumlar</h3>
+                <div class="comment">
+                    <p><strong>Sdt:</strong> Harika la</p>
+                </div>
+                <div class="comment">
+                    <p><strong>Umut:</strong> Mükemmel film olm</p>
+                </div>
+                <div class="comment">
+                    <p><strong>Chaery:</strong> sivas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./movie-player.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+
+.sidebar {
+    width: 260px;
+    background: linear-gradient(to bottom, #0a0a0a, #1f1f1f);
+    padding: 25px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar .logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    color: #e63946;
+    text-shadow: 0 0 10px rgba(230, 57, 70, 0.5);
+    margin-bottom: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.sidebar .logo:hover {
+    text-shadow: 0 0 15px rgba(230, 57, 70, 0.7);
+}
+
+.sidebar nav ul,
+.sidebar .account ul {
+    list-style: none;
+}
+
+.sidebar nav ul li,
+.sidebar .account ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar nav ul li:hover,
+.sidebar .account ul li:hover {
+    background: rgba(230, 57, 70, 0.15);
+    transform: translateX(5px);
+}
+
+.sidebar nav ul li.active {
+    background: linear-gradient(90deg, #e63946, #b71c1c);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(230, 57, 70, 0.5);
+}
+
+.sidebar .material-icons {
+    font-size: 26px;
+    color: #e0e0e0;
+}
+
+
+
+.main-content {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    padding: 30px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #0a0a0a, #1f1f1f);
+    padding: 50px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 52px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.hero .meta {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.hero .meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #e63946;
+}
+
+.hero .description {
+    font-size: 17px;
+    color: #d0d0d0;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.hero .btn-watch {
+    background: linear-gradient(90deg, #e63946, #b71c1c);
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(230, 57, 70, 0.5);
+}
+
+.hero .btn-watch:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(230, 57, 70, 0.7);
+}
+
+.hero-image {
+    width: 45%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.hero-image:hover {
+    box-shadow: 0 12px 25px rgba(230, 57, 70, 0.4);
+}
+
+
+
+.trending h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.trending h2 a {
+    font-size: 16px;
+    color: #e63946;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.trending h2 a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -3px;
+    left: 0;
+    background: #e63946;
+    transition: width 0.3s ease;
+}
+
+.trending h2 a:hover::after {
+    width: 100%;
+}
+
+.trending h2 a:hover {
+    color: #b71c1c;
+}
+
+.movie-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.movie-card {
+    width: 220px;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(230, 57, 70, 0.4);
+}
+
+.movie-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 0 0 15px 15px;
+    transition: all 0.3s ease;
+}
+
+.movie-card:hover .overlay {
+    background: linear-gradient(to top, rgba(230, 57, 70, 0.8), transparent);
+}

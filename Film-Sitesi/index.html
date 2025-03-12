@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Film Dünyası</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        
+
+        <aside class="sidebar">
+            <div class="logo">Film Dünyası</div>
+            <nav>
+                <ul>
+                    <li class="active"><span class="material-icons">home</span> Ana Sayfa</li>
+                    <li><span class="material-icons">movie_filter</span> Filmler</li>
+                    <li><span class="material-icons">tv</span> Diziler</li>
+                    <li><span class="material-icons">search</span> Arama</li>
+                </ul>
+            </nav>
+            <div class="account">
+                <ul>
+                    <li><span class="material-icons">language</span> Dil</li>
+                    <li><span class="material-icons">account_circle</span> Giriş Yap</li>
+                </ul>
+            </div>
+        </aside>
+
+        
+        
+        <main class="main-content">
+            <header class="hero">
+                <div class="hero-content">
+                    <h1>Inception</h1>
+                    <div class="meta">
+                        <span class="year">2010</span>
+                        <span class="rating"><span class="material-icons">star</span> 4.8</span>
+                    </div>
+                    <p class="description">Leonardo DiCaprio’nun rüyalar içinde geçen gizemli bir hırsızlık hikayesi.</p>
+                    <a href="#" class="btn-watch">Şimdi İzle</a>
+                </div>
+                <div class="hero-image" style="background-image: url('./assets/images/inception.jpg');"></div>
+            </header>
+
+            
+
+<section class="trending">
+    <h2>Trend Filmler <a href="#">Tümünü Gör</a></h2>
+    <div class="movie-grid">
+        <div class="movie-card" style="background-image: url('./assets/images/zindan-adasi.jpg');">
+            <div class="overlay">Zindan Adası</div>
+        </div>
+        <div class="movie-card" style="background-image: url('./assets/images/dunkirk.jpg');">
+            <div class="overlay">Dunkirk</div>
+        </div>
+      
+
+        <div class="movie-card" style="background-image: url('./assets/images/memento.jpg');" onclick="window.open('./movie-player.html', '_blank');">
+            <div class="overlay">Memento</div>
+        </div>
+        <div class="movie-card" style="background-image: url('./assets/images/tenet.jpg');">
+            <div class="overlay">Tenet</div>
+        </div>
+        <div class="movie-card" style="background-image: url('./assets/images/interstellar.jpg');">
+            <div class="overlay">Interstellar</div>
+        </div>
+    </div>
+</section>
+
+            <section class="trending">
+                <h2>Trend Diziler <a href="#">Tümünü Gör</a></h2>
+                <div class="movie-grid">
+                    <div class="movie-card" style="background-image: url('./assets/images/shining.jpg');">
+                        <div class="overlay">Cinnet</div>
+                    </div>
+                    <div class="movie-card" style="background-image: url('./assets/images/ews.jpg');">
+                        <div class="overlay">Eyes Wide Shut</div>
+                    </div>
+                    <div class="movie-card" style="background-image: url('./assets/images/fmj.jpg');">
+                        <div class="overlay">Full Metal Jacket</div>
+                    </div>
+                    <div class="movie-card" style="background-image: url('./assets/images/matrix.jpg');">
+                        <div class="overlay">Matrix</div>
+                    </div>
+                    <div class="movie-card" style="background-image: url('./assets/images/rpo.jpg');">
+                        <div class="overlay">Ready Player One</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
